@@ -17,4 +17,5 @@ window.TRABALHOS = [
   { id: 'natal-boneco', titulo: 'Boneco de Natal', categoria: 'natal', imagem: 'natal-boneco.webp', descricao: 'Biscoito decorado com tema natalino.' },
   { id: 'pascoa-caixa', titulo: 'Caixa de Páscoa', categoria: 'pascoa', imagem: 'pascoa-caixa.png', descricao: 'Caixa artesanal para presentear na Páscoa.' },
   { id: 'pascoa-cruz', titulo: 'Páscoa cristã', categoria: 'pascoa', imagem: 'pascoa-cruz.png', descricao: 'Biscoitos decorados com cruz e folhagens.' }
+  [ id: 'apresentacao', titulo: 'Quem Somos?', categoria: 'pessoas', imagem: 'Abraço Afetuoso na Padaria Aconchegante.png', descricao: 'As confeiteiras desses Biscoitos' }]
 ];
