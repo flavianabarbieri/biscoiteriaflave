@@ -24,20 +24,55 @@
 .makers-copy h2{max-width:600px}.makers-copy p{color:var(--muted);max-width:590px;font-size:1rem}.makers-note{display:inline-block;color:var(--blue-dark);font-weight:800;margin:5px 0 23px}
 @media(max-width:920px){.makers-grid{gap:30px}.makers-photo img{height:420px}}
 @media(max-width:680px){.makers-grid{grid-template-columns:1fr}.makers-photo{max-width:470px;width:100%;margin:0 auto}.makers-photo img{height:auto;aspect-ratio:4/5;object-fit:cover}.makers-copy{order:-1}}
+
+/* Videos publicados via videos.js */
+.videos-section{background:#f3ebe2;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.videos-intro{max-width:750px;color:var(--muted)}
+.videos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:25px;margin-top:30px}
+.video-card{overflow:hidden;background:var(--paper);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}
+.video-frame{background:#203f51;display:flex;justify-content:center;align-items:center;padding:16px;min-height:250px}
+.video-frame video{display:block;width:100%;max-height:500px;aspect-ratio:9/16;object-fit:contain;border-radius:15px}
+.video-details{padding:22px}.video-details h3{margin:0 0 8px}.video-details p{margin:0;color:var(--muted);line-height:1.65}
+@media(max-width:680px){.video-frame{min-height:0;padding:10px}.video-frame video{max-height:420px}}
 </style>
 </head>
 <body>
-<header class="header"><div class="wrap header-inner"><a class="brand" href="#inicio"><img src="logo.jpg" alt="Logo Biscoiteria da Flavê"><span>Biscoiteria da Flavê<small>Biscoitos feitos com carinho</small></span></a><button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav">☰ Menu</button><nav class="nav" id="nav" aria-label="Menu principal"><a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#confeiteiras">As confeiteiras</a><a href="#trabalhos">Nossas criações</a><a href="#como-pedir">Como encomendar</a><a class="button button-primary" href="#contato">Faça seu pedido ↗</a></nav></div></header>
+<header class="header"><div class="wrap header-inner"><a class="brand" href="#inicio"><img src="logo.jpg" alt="Logo Biscoiteria da Flavê"><span>Biscoiteria da Flavê<small>Biscoitos feitos com carinho</small></span></a><button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav">☰ Menu</button><nav class="nav" id="nav" aria-label="Menu principal"><a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#confeiteiras">As confeiteiras</a><a href="#trabalhos">Nossas criações</a><a href="#videos">Vídeos</a><a href="#como-pedir">Como encomendar</a><a class="button button-primary" href="#contato">Faça seu pedido ↗</a></nav></div></header>
 <main id="inicio">
 <section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><span class="eyebrow">✦ Biscoitos artesanais personalizados</span><h1>Pequenos detalhes, <span style="color:var(--blue)">grandes emoções.</span></h1><p>Criamos biscoitos especiais que transformam aniversários, lembranças e celebrações em momentos ainda mais doces.</p><div class="hero-actions"><a class="button button-primary" href="#trabalhos">Conheça nossas criações ↗</a><a class="button button-outline" href="#contato">Encomende o seu</a></div><div class="hero-signs"><span>Feitos à mão</span><span>Personalizados</span><span>Com muito carinho</span></div></div><div class="hero-photo"><img class="main-photo" src="felipe.webp" alt="Biscoitos decorados e personalizados do Felipe"><img class="mini-photo" src="natal-boneco.webp" alt="Biscoito natalino decorado"><div class="round-stamp"><div><strong>100%</strong> especiais</div></div></div></div></section>
 <section class="section intro" id="sobre"><div class="wrap intro-grid"><div class="intro-text"><span class="eyebrow">Feito com amor</span><h2>Uma doce lembrança para cada história.</h2><p>Na Biscoiteria da Flavê, cada biscoito é pensado para combinar com a sua ocasião. Do tema escolhido à embalagem, os detalhes fazem parte da experiência.</p><p>Nossa galeria reúne trabalhos já realizados e continua crescendo a cada nova criação. Inspire-se para imaginar o seu!</p><a class="button button-outline" href="#trabalhos">Explore nosso portfólio →</a></div><div class="intro-cards"><article class="intro-card"><div class="emoji">🎂</div><h3>Aniversários</h3><p>Festas, temas, nomes e idades.</p></article><article class="intro-card"><div class="emoji">🌼</div><h3>Maternidade</h3><p>Delicadeza para a chegada do bebê.</p></article><article class="intro-card"><div class="emoji">🎁</div><h3>Datas especiais</h3><p>Presentes criativos para cada ocasião.</p></article><article class="intro-card"><div class="emoji">🏢</div><h3>Corporativo</h3><p>Brindes e ações personalizadas.</p></article></div></div></section>
 <section class="section makers" id="confeiteiras" aria-labelledby="confeiteiras-titulo"><div class="wrap makers-grid"><figure class="makers-photo"><img src="confeiteiras-flave.webp" alt="As duas confeiteiras da Biscoiteria da Flavê sorrindo juntas" loading="lazy" decoding="async" width="960" height="1200"></figure><div class="makers-copy"><span class="eyebrow">Conheça quem está por trás de cada criação</span><h2 id="confeiteiras-titulo">Quem faz a magia acontecer?</h2><p>Por trás de cada biscoito, estamos nós: as confeiteiras da Biscoiteria da Flavê! Criamos cada detalhe com dedicação, criatividade e muito carinho.</p><p>Da escolha do tema ao toque final, nosso trabalho é transformar ideias em biscoitos artesanais e lembranças doces para os seus momentos especiais.</p><span class="makers-note">Feito à mão, com amor e atenção aos detalhes. ♡</span><div><a class="button button-primary" href="#trabalhos">Conheça nossas criações ↗</a></div></div></div></section>
 <section class="section" id="trabalhos"><div class="wrap"><span class="eyebrow">Nosso portfólio</span><div class="portfolio-head"><h2>Criações que encantam</h2><p>Confira os trabalhos que já ganharam vida por aqui. Escolha uma categoria e toque em uma foto para ampliar.</p></div><div id="filters" class="filters" role="group" aria-label="Filtrar trabalhos"></div><div class="gallery" id="gallery" aria-live="polite"></div><div id="empty" class="empty" hidden>Nenhum trabalho encontrado nesta categoria.</div><div class="gallery-actions"><button class="button button-outline" id="showMore" type="button" hidden>Ver mais criações ↓</button></div></div></section>
+<section class="section videos-section" id="videos" aria-labelledby="videos-title"><div class="wrap"><span class="eyebrow">Detalhes que encantam</span><h2 id="videos-title">Nossas criações em movimento</h2><p class="videos-intro">Um olhar mais de perto para conhecer os detalhes dos nossos trabalhos artesanais. Aperte o play e inspire-se!</p><div class="videos-grid" id="videosGrid"></div></div></section>
 <section class="section feature"><div class="wrap feature-grid"><div class="feature-image"><img src="pascoa-caixa.png" loading="lazy" alt="Caixa artesanal de biscoitos decorados"><div class="feature-note">Um presente que também é uma lembrança ♡</div></div><div><span class="eyebrow">Do jeitinho que você imaginou</span><h2>Feitos especialmente para o seu momento.</h2><p class="section-sub">Uma ideia, uma data importante ou uma mensagem carinhosa podem virar biscoitos personalizados. Cada encomenda é combinada conforme a ocasião, a quantidade e as possibilidades de produção.</p><a class="button button-primary" href="#contato">Vamos conversar sobre sua ideia ↗</a></div></div></section>
 <section class="section" id="como-pedir"><div class="wrap"><span class="eyebrow">É muito simples</span><h2>Como fazer sua encomenda</h2><div class="steps"><div class="step"><b>01</b><h3>Conte sua ideia</h3><p>Envie o tema, a ocasião e o que você imagina.</p></div><div class="step"><b>02</b><h3>Informe os detalhes</h3><p>Combine quantidade, personalização e data desejada.</p></div><div class="step"><b>03</b><h3>Alinhamos o pedido</h3><p>Confirmamos as possibilidades e o orçamento.</p></div><div class="step"><b>04</b><h3>Feito com carinho</h3><p>Seus biscoitos são preparados para a ocasião.</p></div></div></div></section>
 <section class="section contact" id="contato"><div class="wrap contact-grid"><div><span class="eyebrow">Vamos adoçar seu momento?</span><h2>Seu próximo momento especial começa aqui.</h2><p>Conte o que você tem em mente. Informe tema, quantidade, data do evento e referências para receber um orçamento.</p><div class="hero-actions"><a class="button button-primary" id="whatsLink" href="https://wa.me/5543996283649?text=Ol%C3%A1%21%20Vi%20os%20trabalhos%20da%20Biscoiteria%20da%20Flav%C3%AA%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">💬 Conversar no WhatsApp</a><a class="button button-outline" href="https://www.instagram.com/biscoiteriadaflave/" target="_blank" rel="noopener noreferrer">📷 Nosso Instagram</a></div><p style="font-size:.9rem">WhatsApp: (43) 99628-3649</p></div></div></section>
 </main><footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> Biscoiteria da Flavê · Feito com carinho 🍪</span><span>Instagram: @biscoiteriadaflave</span></div></footer>
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização da fotografia" aria-hidden="true"><button class="lightbox-close" id="closeLightbox" type="button" aria-label="Fechar imagem">×</button><button class="lightbox-nav lightbox-prev" id="prevImage" type="button" aria-label="Imagem anterior">‹</button><div class="lightbox-inner"><img id="lightboxImg" alt=""><p id="lightboxCaption"></p></div><button class="lightbox-nav lightbox-next" id="nextImage" type="button" aria-label="Próxima imagem">›</button></div>
+<script src="videos.js"></script>
+<script>
+(function(){
+  const grid=document.getElementById('videosGrid');
+  const items=Array.isArray(window.VIDEOS)?window.VIDEOS.filter(v=>v&&v.arquivo):[];
+  if(!grid)return;
+  items.forEach(v=>{
+    const article=document.createElement('article');article.className='video-card';
+    const frame=document.createElement('div');frame.className='video-frame';
+    const video=document.createElement('video');
+    video.controls=true;video.preload='none';video.playsInline=true;
+    video.setAttribute('aria-label',v.titulo||'Vídeo de um trabalho artesanal');
+    if(v.capa)video.poster=v.capa;
+    const source=document.createElement('source');source.src=v.arquivo;source.type='video/mp4';
+    video.append(source);video.append(document.createTextNode('Seu navegador não suporta este vídeo.'));
+    frame.append(video);
+    const details=document.createElement('div');details.className='video-details';
+    const title=document.createElement('h3');title.textContent=v.titulo||'Nossa criação';
+    const desc=document.createElement('p');desc.textContent=v.descricao||'';
+    details.append(title,desc);article.append(frame,details);grid.append(article);
+  });
+  if(!items.length)document.getElementById('videos').hidden=true;
+})();
+</script>
 <script src="trabalhos.js"></script>
 <script>
 (()=>{'use strict';
